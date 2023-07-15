@@ -16,10 +16,12 @@
 		"test": "prettier --check ."
 	},
 	"dependencies": {
+		"@vite-pwa/astro": "^0.1.1",
 		"astro": "^2.8.3"
 	},
 	"devDependencies": {
 		"prettier": "^3.0.0",
-		"prettier-plugin-astro": "^0.11.0"
+		"prettier-plugin-astro": "^0.11.0",
+		"vite-plugin-pwa": "^0.16.4"
 	}
 }
