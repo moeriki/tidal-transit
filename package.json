@@ -16,6 +16,7 @@
 		"test": "prettier --check ."
 	},
 	"dependencies": {
+		"@astrojs/netlify": "^2.4.0",
 		"@vite-pwa/astro": "^0.1.1",
 		"astro": "^2.8.3"
 	},
