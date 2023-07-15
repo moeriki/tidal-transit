@@ -1,15 +1,21 @@
 {
-  "name": "tidal-transit",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.8.3"
-  }
+	"name": "tidal-transit",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"astro": "astro",
+		"build": "astro build",
+		"dev": "astro dev",
+		"format": "prettier --write .",
+		"preview": "astro preview",
+		"start": "astro dev",
+		"test": "prettier --check ."
+	},
+	"dependencies": {
+		"astro": "^2.8.3"
+	},
+	"devDependencies": {
+		"prettier": "^3.0.0",
+		"prettier-plugin-astro": "^0.11.0"
+	}
 }
