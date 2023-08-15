@@ -1,7 +1,9 @@
 /// <reference types="astro/client" />
+/// <reference types="vite-plugin-pwa/client" />
+/// <reference types="vite-plugin-pwa/info" />
 
 interface ImportMetaEnv {
-  readonly CONTENTFUL_SPACE_ID: string;
-  readonly CONTENTFUL_DELIVERY_TOKEN: string;
-  readonly CONTENTFUL_PREVIEW_TOKEN: string;
+	readonly CONTENTFUL_SPACE_ID: string;
+	readonly CONTENTFUL_DELIVERY_TOKEN: string;
+	readonly CONTENTFUL_PREVIEW_TOKEN: string;
 }
