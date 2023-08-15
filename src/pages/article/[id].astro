@@ -1,32 +1,28 @@
 ---
-import Layout from '../layouts/layout.astro';
-import { getArticles } from '../lib/contentful';
+import Layout from '../../layouts/layout.astro';
+import { getArticle, renderRichText } from '../../lib/contentful';
 
-const articles = await getArticles();
+const { id } = Astro.params;
+
+const article = await getArticle(id as string);
 ---
 
 <Layout title="HOVB">
 	<main>
+		<a href="/" class="text-gradient">← Back</a>
 		<h1 class="text-gradient">HOVB</h1>
 		<ul>
-			{
-				articles.items.map((item) => {
-					// console.dir(item);
-					return (
-						<li>
-							<h2>
-								<a href={`/article/${item.sys.id}`}>{item.fields.title}</a>
-							</h2>
-						</li>
-					);
-				})
-			}
+			<li>
+				<h2>{article.fields.title}</h2>
+				<article set:html={renderRichText(article.fields.description)} />
+			</li>
 		</ul>
 	</main>
 </Layout>
 
 <style>
 	main {
+		margin: auto;
 		padding: 1.5rem;
 	}
 	h1 {

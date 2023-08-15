@@ -19,6 +19,9 @@ devDependencies:
   '@astrojs/vercel':
     specifier: ^3.8.1
     version: 3.8.1(astro@2.10.7)(react@18.2.0)
+  '@contentful/rich-text-types':
+    specifier: ^16.2.1
+    version: 16.2.1
   '@vite-pwa/astro':
     specifier: ^0.1.1
     version: 0.1.1(astro@2.10.7)(vite-plugin-pwa@0.16.4)
@@ -1234,7 +1237,6 @@ packages:
   /@contentful/rich-text-types@16.2.1:
     resolution: {integrity: sha512-fBxqYcyG3Nw33DhifuE7Ndw3xlrWlOMjwsOvhLmVP4LO475Qyy9ioRChtEt6DPUdH2SFpobvM0qqC/fVe0MNDA==}
     engines: {node: '>=6.0.0'}
-    dev: false
 
   /@emmetio/abbreviation@2.3.3:
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}

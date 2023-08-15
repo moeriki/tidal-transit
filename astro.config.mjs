@@ -8,9 +8,9 @@ export default defineConfig({
 		AstroPWA({
 			includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
 			manifest: {
-				name: 'My Awesome App',
-				short_name: 'MyApp',
-				description: 'My Awesome App description',
+				name: 'HOVB',
+				short_name: 'HOVB',
+				description: '',
 				theme_color: '#ffffff',
 				icons: [
 					{
@@ -25,6 +25,7 @@ export default defineConfig({
 					},
 				],
 			},
+			registerType: 'autoUpdate',
 		}),
 	],
 	output: 'server',
