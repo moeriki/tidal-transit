@@ -1,9 +1,9 @@
-import netlify from '@astrojs/netlify/functions';
+import vercel from '@astrojs/vercel/serverless';
 import AstroPWA from '@vite-pwa/astro';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-	adapter: netlify(),
+	adapter: vercel(),
 	integrations: [
 		AstroPWA({
 			includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],

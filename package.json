@@ -20,7 +20,7 @@
 		"contentful": "^10.4.2"
 	},
 	"devDependencies": {
-		"@astrojs/netlify": "^2.6.0",
+		"@astrojs/vercel": "^3.8.1",
 		"@vite-pwa/astro": "^0.1.1",
 		"astro": "^2.10.7",
 		"prettier": "^3.0.1",
