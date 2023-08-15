@@ -16,15 +16,15 @@
 		"test": "prettier --check ."
 	},
 	"dependencies": {
-		"@contentful/rich-text-html-renderer": "^16.1.0",
-		"contentful": "^10.3.4"
+		"@contentful/rich-text-html-renderer": "^16.1.1",
+		"contentful": "^10.4.2"
 	},
 	"devDependencies": {
-		"@astrojs/netlify": "^2.4.0",
+		"@astrojs/netlify": "^2.6.0",
 		"@vite-pwa/astro": "^0.1.1",
-		"astro": "^2.8.3",
+		"astro": "^2.10.7",
+		"prettier": "^3.0.1",
 		"prettier-plugin-astro": "^0.11.0",
-		"prettier": "^3.0.0",
 		"vite-plugin-pwa": "^0.16.4"
 	}
 }
