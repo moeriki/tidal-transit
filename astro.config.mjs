@@ -177,6 +177,9 @@ export default defineConfig({
 				theme_color: '#fff',
 			},
 			registerType: 'autoUpdate',
+			workbox: {
+				globPatterns: ['**/*.{css,html,ico,js,png}'],
+			},
 		}),
 	],
 	output: 'server',
