@@ -1,5 +1,6 @@
 ---
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import type { EntrySkeletonType } from 'contentful';
 
 import Layout from '../layouts/layout.astro';
 import { contentfulClient } from '../lib/contentful';
@@ -9,7 +10,7 @@ interface Article {
 	description: Document;
 }
 
-const entries = await contentfulClient.getEntries<Article>({
+const entries = await contentfulClient.getEntries<EntrySkeletonType<Article>>({
 	content_type: 'test',
 });
 ---
